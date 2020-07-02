@@ -5,11 +5,27 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import App from './App';
 import theme from './theme';
 
+import { ApolloProvider } from 'react-apollo'
+import { ApolloClient } from 'apollo-client'
+import { createHttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+
+// 2
+const httpLink = createHttpLink({
+  uri: 'http://localhost:4000'
+})
+
+// 3
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache()
+})
+
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-    <CssBaseline />
-    <App />
-  </ThemeProvider>,
+  <ApolloProvider client={client}>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </ApolloProvider>,
   document.querySelector('#root'),
 );
