@@ -8,19 +8,6 @@ import SimpleCard from './SimpleCard';
 import Drawer from './Drawer'
 import TopAppBar from './TopAppBar'
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
-
 export default function App() {
   return (
     <Container maxWidth="sm">
