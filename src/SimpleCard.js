@@ -38,7 +38,7 @@ export default function SimpleCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="secondary">
+        <Button size="small" color="secondary" onClick={() => props.update("mooorreee")}>
           Share
         </Button>
         <Button size="small" color="primary">

@@ -16,6 +16,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import SimpleCard from "./SimpleCard"
 import SolutionViewer from "./SolutionViewer"
+import { TheContextConsumer } from "./TheContext"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,7 +30,12 @@ export default function ChallengeList(props) {
       <div className={classes.root} >
         <Grid container spacing={3}>
             {props.challengeConfigs.map(
-                (challenge) => <Grid item xs={4}> <SimpleCard {...challenge}/></Grid>)
+                (challenge) => <Grid item xs={4}> 
+                  <TheContextConsumer>
+                  {({setFoo}) => <SimpleCard update={setFoo} {...challenge} name={props.foo}/>}
+                  </TheContextConsumer>
+                </Grid>
+                )
             }
         </Grid>
       </div>

@@ -35,7 +35,7 @@ const City = () => (
   </div>
 );
 
-class App extends Component {
+class ExampleRouting extends Component {
   render() {
     return (
       <div>
@@ -53,9 +53,7 @@ class App extends Component {
   }
 }
 
-export default App;
 
-/*
 export default function App() {
   return (
     <Container maxWidth="sm">
@@ -66,5 +64,3 @@ export default function App() {
     </Container>
   );
 }
-
-*/

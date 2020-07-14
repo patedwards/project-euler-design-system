@@ -18,6 +18,8 @@ import SimpleCard from "./SimpleCard"
 import SolutionViewer from "./SolutionViewer"
 import ChallengeList from './ChallengeList'
 import { challengeConfigs } from './configs'
+import { TheContextConsumer } from './TheContext';
+
 
 
 const drawerWidth = 240;
@@ -84,7 +86,7 @@ export default function MainDrawer() {
 
   const props = {
       page: "challenges",
-      page: "solution"
+      //page: "solution"
   }
 
   return (
@@ -121,7 +123,10 @@ export default function MainDrawer() {
         <div className={classes.toolbar} />
         <div className={classes.content} >
           {{
-              "challenges" : <ChallengeList challengeConfigs={challengeConfigs}/>,
+              "challenges" : 
+                <TheContextConsumer>
+                  {({foo}) => <ChallengeList foo={foo} challengeConfigs={challengeConfigs}/>}  
+                </TheContextConsumer>,
               "solution": <SolutionViewer children={<SimpleCard/>}/>
           }[props.page] || <Filler/>}
         </div>
