@@ -8,7 +8,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import Icon from '@material-ui/core/Icon';
-import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as Logo } from '../static/images/logo.svg';
 
 function MenuIcon(props) {
   const classes = useStyles();

@@ -7,7 +7,6 @@ import { TheContextProvider } from './TheContext';
 import App from './App';
 import theme from './theme';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import './index.css';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>

@@ -14,11 +14,11 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import SimpleCard from "./SimpleCard"
+import SimpleCard from "./ChallengeCard"
 import SolutionViewer from "./SolutionViewer"
 import ChallengeList from './ChallengeList'
-import { challengeConfigs } from './configs'
-import { TheContextConsumer } from './TheContext';
+import { challengeConfigs } from '../configs'
+import { TheContextConsumer } from '../TheContext';
 
 
 
@@ -84,11 +84,6 @@ const Filler = () => (
 export default function MainDrawer() {
   const classes = useStyles();
 
-  const props = {
-      page: "challenges",
-      //page: "solution"
-  }
-
   return (
     <div className={classes.root}>
       <Drawer
@@ -122,13 +117,9 @@ export default function MainDrawer() {
       <div >
         <div className={classes.toolbar} />
         <div className={classes.content} >
-          {{
-              "challenges" : 
-                <TheContextConsumer>
+          {<TheContextConsumer>
                   {({foo}) => <ChallengeList foo={foo} challengeConfigs={challengeConfigs}/>}  
-                </TheContextConsumer>,
-              "solution": <SolutionViewer children={<SimpleCard/>}/>
-          }[props.page] || <Filler/>}
+          </TheContextConsumer>}
         </div>
       </div>
     </div>

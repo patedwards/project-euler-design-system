@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import ProTip from './ProTip';
-import SimpleCard from './SimpleCard';
-import Drawer from './Drawer'
-import TopAppBar from './TopAppBar'
+import Drawer from './components/Drawer'
+import SolutionViewer from './components/SolutionViewer'
+import TopAppBar from './components/TopAppBar'
 import { Route, Link } from 'react-router-dom';
+import { challengeConfigs } from './configs'
 
 
 const Home = () => (
@@ -48,6 +48,7 @@ class ExampleRouting extends Component {
         <Route path="/" component={Home}/>
         <Route path="/airports" component={Airport}/>
         <Route path="/cities" component={City}/>
+        
       </div>
     );
   }
@@ -59,7 +60,16 @@ export default function App() {
     <Container maxWidth="sm">
       <Box my={4}>
         <TopAppBar/>
-        <Drawer />
+        <Route path="/home" component={Drawer}/>
+        {challengeConfigs.map(
+          (config) => <Route 
+            path={"/"+config.urlExtension} 
+            component={
+              () => <SolutionViewer children={"text"}/>
+            }
+            />
+          )
+        }
       </Box>
     </Container>
   );

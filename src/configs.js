@@ -47,6 +47,7 @@ export const challengeConfigs = [
         Design an interface for a desktop computer that can assist the fact checking team. This team are experienced fact checkers who use a variety of web sources to validate/invalidate assertions. \
         While designing this interface, take some creative liberties with what the algorithm can do. It can detect with 90% certainty, but make some room for Alice to make improvements, and even suggest some by showing her how new capabilities could be incorporated into your design.",
         imgSrc: require('./static/images/challenges/AlarmClock.jpg'),
+        urlExtension: "factcheckersrus",
         instructions: [
             {
                 type: "upload",
@@ -59,6 +60,7 @@ export const challengeConfigs = [
         number: 1,
         description: "Alice develops an algorithm that can be used to detect anomalies in a data set. Develop an interface where users entering data into a table with 10,000 rows and 10 columns can enter data with a lower error rate than regular spreadsheets.",
         imgSrc: require('./static/images/challenges/AlarmClock.jpg'),
+        urlExtension: "dataentryassist",
         instructions: [
             {
                 type: "upload",
@@ -71,6 +73,7 @@ export const challengeConfigs = [
         number: 1,
         description: "Alice has developed a suite of algorithms for predicting stock prices. Each method performs better under certain conditions and risk appetites. Develop an interface that allows an investor to make decisions on which stocks to buy using Alice's algorithms and their own understanding of the environment.",
         imgSrc: require('./static/images/challenges/AlarmClock.jpg'),
+        urlExtension: "ensemblemethods",
         instructions: [
             {
                 type: "upload",

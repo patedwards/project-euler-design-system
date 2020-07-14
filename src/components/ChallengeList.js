@@ -14,9 +14,9 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import SimpleCard from "./SimpleCard"
+import SimpleCard from "./ChallengeCard"
 import SolutionViewer from "./SolutionViewer"
-import { TheContextConsumer } from "./TheContext"
+import { TheContextConsumer } from "../TheContext"
 
 const useStyles = makeStyles((theme) => ({
     root: {
