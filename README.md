@@ -80,3 +80,7 @@ Alice develops an algorithm that can be used to detect anomalies in a data set. 
 ### Ensemble methods
 
 Alice has developed a suite of algorithms for predicting stock prices. Each method performs better under certain conditions and risk appetites. Develop an interface that allows an investor to make decisions on which stocks to buy using Alice's algorithms and their own understanding of the environment.
+
+# next steps:
+
+- create a placeholder component and get all the routing set up. include some sort of input field to test state updates with the routing.

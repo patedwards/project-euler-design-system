@@ -10,6 +10,10 @@ The site has a few different categories:
 
 const configs = {
     top_level: {
+        home: {
+          name: "Home",
+          component: ""  
+        },
         about: {
             name: "About",
             component: "<AboutPageComponent>",
@@ -19,6 +23,9 @@ const configs = {
             name: "Challenges",
             component: "<ChallengesComponent>",
             onClick: () => console.log("clicked challenges")
+        },
+        blog: {
+            name: "Blog"
         },
         resources: {
             name: "Resources",

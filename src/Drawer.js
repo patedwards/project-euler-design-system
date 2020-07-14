@@ -84,7 +84,7 @@ export default function MainDrawer() {
 
   const props = {
       page: "challenges",
-      //page: "solution"
+      page: "solution"
   }
 
   return (
