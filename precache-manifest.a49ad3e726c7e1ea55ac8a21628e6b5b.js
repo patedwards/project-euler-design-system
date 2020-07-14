@@ -1,23 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bad80b1b0f39db875dc3ca8c832b9492",
+    "revision": "c1c6947ebbd285a7cb5f76e8b3ed4f7b",
     "url": "/project-norman/index.html"
   },
   {
-    "revision": "e84bf45f2f5eb6d249f1",
-    "url": "/project-norman/static/css/main.5ecd60fb.chunk.css"
-  },
-  {
-    "revision": "1369e03cdcc24201040a",
-    "url": "/project-norman/static/js/2.38df5168.chunk.js"
+    "revision": "7944ff0d8567807ccec3",
+    "url": "/project-norman/static/js/2.b192e95d.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/project-norman/static/js/2.38df5168.chunk.js.LICENSE.txt"
+    "url": "/project-norman/static/js/2.b192e95d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e84bf45f2f5eb6d249f1",
-    "url": "/project-norman/static/js/main.7d4e0a4f.chunk.js"
+    "revision": "d2f5889203821b6e9e91",
+    "url": "/project-norman/static/js/main.4827a9e4.chunk.js"
   },
   {
     "revision": "6d6de50312f36dd8e2e2",
