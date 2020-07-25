@@ -1,0 +1,14 @@
+type Challenge @model {
+  id: ID!
+  name: String!
+  description: String
+  solutions: [Solution]
+}
+
+type Solution @model {
+  id: ID!
+  name: String!
+  description: String
+  videoLink: String
+  githubLink: String
+}

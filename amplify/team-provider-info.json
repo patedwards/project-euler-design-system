@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-projectnorman-dev-114346-authRole",
+            "UnauthRoleArn": "arn:aws:iam::635420739373:role/amplify-projectnorman-dev-114346-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::635420739373:role/amplify-projectnorman-dev-114346-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-projectnorman-dev-114346-deployment",
+            "UnauthRoleName": "amplify-projectnorman-dev-114346-unauthRole",
+            "StackName": "amplify-projectnorman-dev-114346",
+            "StackId": "arn:aws:cloudformation:us-west-2:635420739373:stack/amplify-projectnorman-dev-114346/c76ddb60-cea6-11ea-8cd6-0a67180fc872",
+            "AmplifyAppId": "d1u7xgrf086ovi"
+        }
+    }
+}
