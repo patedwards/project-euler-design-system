@@ -1,3 +1,19 @@
+type ChallengeList
+  @model
+  @auth
+  {
+      id: ID!
+      name: String!
+      description: ChallengeDescription
+      solutions: [Solution]
+  }
+
+
+type ChallengeDescription
+  {
+      text: String!
+  }
+
 type Challenge @model {
   id: ID!
   name: String!

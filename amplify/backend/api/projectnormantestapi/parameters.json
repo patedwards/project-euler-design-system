@@ -1,5 +1,11 @@
 {
     "AppSyncApiName": "projectnormantestapi",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": false
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authprojectnorman7dfb9305",
+            "Outputs.UserPoolId"
+        ]
+    }
 }

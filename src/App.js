@@ -6,7 +6,10 @@ import Drawer from './components/Drawer'
 import SolutionViewer from './components/SolutionViewer'
 import TopAppBar from './components/TopAppBar'
 import { Route, Link } from 'react-router-dom';
-import { challengeConfigs } from './configs'
+import { challengeConfigs } from './configs';
+import PostApp from './components/scratchComponents/PostApp.js';
+import { AmplifySignOut } from '@aws-amplify/ui-react';
+
 
 
 const Home = () => (
@@ -60,7 +63,12 @@ export default function App() {
     <Container maxWidth="sm">
       <Box my={4}>
         <TopAppBar/>
+        <AmplifySignOut button-text="Custom Text"></AmplifySignOut>
+        <Route path="/scratch" component={PostApp}/>
         <Route path="/home" component={Drawer}/>
+        <Route path="/" component={Home}/>
+        <Route path="/airports" component={Airport}/>
+        <Route path="/cities" component={City}/>
         {challengeConfigs.map(
           (config) => <Route 
             path={"/"+config.urlExtension} 
